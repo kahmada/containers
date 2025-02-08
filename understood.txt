@@ -1,0 +1,34 @@
+Un container en C++ est une structure de données qui permet de stocker et gérer des éléments 
+en mémoire. Il fait partie de la bibliothèque standard C++ (STL - Standard Template Library) 
+et fournit des fonctionnalités utiles comme l’ajout, la suppression et l’accès aux éléments.
+
+🔹 Types de containers en C++
+Les containers sont classés en trois grandes catégories :
+
+1️⃣ Containers séquentiels
+Les éléments sont stockés de manière ordonnée, l’ordre dépend du moment où ils sont insérés.
+
+std::vector : Tableau dynamique (rapide pour l'accès direct, mais peut être lent pour l'insertion/
+suppression au milieu).
+std::deque : Double-ended queue (insertion et suppression rapides aux deux extrémités).
+std::list : Liste chaînée double (insertion/suppression rapides partout, mais accès direct plus lent).
+std::array (C++11) : Tableau de taille fixe.
+2️⃣ Containers associatifs
+Stockent des éléments sous forme de paires clé-valeur et permettent une recherche rapide.
+
+std::map : Associe des clés uniques à des valeurs, trié par clé.
+std::multimap : Comme map, mais permet plusieurs valeurs pour la même clé.
+
+3️⃣ Containers associatifs non triés (C++11)
+Similaires aux containers associatifs, mais utilisent un hachage pour une recherche rapide.
+
+std::unordered_map
+std::unordered_multimap
+std::unordered_set
+std::unordered_multiset
+
+
+🔥 Pourquoi utiliser les containers ?
+✅ Gèrent la mémoire automatiquement (évite les fuites de mémoire).
+✅ Offrent des opérations optimisées comme l'insertion, la suppression et la recherche.
+✅ Faciles à utiliser avec les algorithmes STL (std::sort, std::find, etc.).
